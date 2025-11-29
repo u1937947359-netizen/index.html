@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti Team</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f8fa;
+      margin: 0;
+      padding: 20px;
+    }
+    .actions {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .actions button {
+      margin: 5px;
+      padding: 10px 16px;
+      font-size: 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .actions button:hover {
+      background-color: #1e7e34;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-left: 6px solid #007bff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 16px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .team-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 8px;
+    }
+    .info {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+    .info span {
+      font-weight: bold;
+      color: #333;
+    }
+    .note {
+      font-style: italic;
+      font-size: 13px;
+      color: #d9534f;
+      margin-top: 8px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    function sendMail(addresses) {
+      const mailto = `mailto:${addresses.join(';')}`;
+      window.location.href = mailto;
+    }
+
+    function sendBccMail(bccAddresses) {
+      const mailto = `mailto:?bcc=${bccAddresses.join(';')}`;
+      window.location.href = mailto;
+    }
+  </script>
+</head>
+<body>
+  <h1 style="color: #007bff; text-align: center;">Referenti Partner Aggiornato</h1>
+
+  <div class="actions">
+    <button onclick="sendBccMail([
+  'giusycaramazza@pentaservizi.it',
+  'francescoavona@mediacallsrl.it',
+  'backoffice@nisacall.it',
+  'tl.galatina@nisacall.it',
+  'l.minunno@nisacall.it',
+  'g.gioia@nisacall.it',
+  'ile.pandi84@gmail.com',
+  'm.daversa@nisacall.it',
+  'g.capobianco@nisacall.it',
+  'antonio.boccuto@103srls.it',
+  'manuel.costa@103srls.it',
+  'amministrazione@8tt8srl.it',
+  'ilariov@zeta-group.it',
+  'lucam@zeta-group.it',
+  'carmenv@zeta-group.it',
+  'armandop@zeta-group.it'
+
+    ])">📩 Invia a chi inserisce </button>
+
+    <button onclick="sendBccMail([
+  'antonio.boccuto@103srls.it',
+  'manuel.costa@103srls.it',
+  'amministrazione@8tt8srl.it',
+  'assistenza.elitesrl@gmail.com',
+  'partner@gruppoelitesrl.com',
+  'amministrazione@gruppoelitesrl.com',
+  'ferdirotu@gmail.com',
+  'alessandra.desimone@sixlives.it',
+  'giusycaramazza@pentaservizi.it',
+  'francescoavona@mediacallsrl.it',
+  'backoffice@nisacall.it',
+  'tl.galatina@nisacall.it',
+  'l.minunno@nisacall.it',
+  'g.gioia@nisacall.it',
+  'ile.pandi84@gmail.com',
+  'm.daversa@nisacall.it',
+  'g.capobianco@nisacall.it',
+  'backofficesistemaerm@gmail.com',
+  'leonardotredicini@gmail.com',
+  'amministrazione@tariffesumisura.it',
+  'risorseumane@tariffesumisura.it',
+  'tariffesumisura.lecce@gmail.com',
+  'tlcallcentertariffesumisura.it@gmail.com',
+  'managementatf@gmail.com',
+  'bo.gestionepratiche@gmail.com',
+  't.dimaio@free-voice.it',
+  'alessandroserviziaziende@gmail.com',
+  'ilariov@zeta-group.it',
+  'lucam@zeta-group.it',
+  'carmenv@zeta-group.it',
+  'armandop@zeta-group.it'
+
+    ])">📩 Invia a Tutti (CCN)</button>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="team-name">CALL CENTER 103</div>
+      <div class="info"><span>📞 Referente:</span> Antonio Boccuto</div>
+      <div class="info">📱 3505802087</div>
+      <div class="info">📧 antonio.boccuto@103srls.it</div>
+      <div class="team-name">8TT8</div>
+      <div class="info"><span>📞 Referente:</span> Manuel Costa</div>
+      <div class="info">📧 manuel.costa@103srls.it</div>
+      <div class="info">📧 amministrazione@8tt8srl.it</div>
+      <div class="note">Pianificazione solo via mail</div>
+      <button onclick="sendMail(['antonio.boccuto@103srls.it','manuel.costa@103srls.it','amministrazione@8tt8srl.it'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">ELITE SRLS</div>
+      <div class="info"><span>📞 Referente:</span> Bruna</div>
+      <div class="info">📱 3911223426</div>
+      <div class="info">📧 assistenza.elitesrl@gmail.com</div>
+      <div class="info">📧 partner@gruppoelitesrl.com</div>
+      <div class="info">📧 amministrazione@gruppoelitesrl.com</div>
+      <button onclick="sendMail(['assistenza.elitesrl@gmail.com','partner@gruppoelitesrl.com','amministrazione@gruppoelitesrl.com'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">SIX LIVES SRLS</div>
+      <div class="info"><span>📞 Referente:</span> Nando Rotundo</div>
+      <div class="info">📱 335319112</div>
+      <div class="info">📧 ferdirotu@gmail.com</div>
+      <div class="info"><span>📞 TL:</span> Alessandra De Simone</div>
+      <div class="info">📱 3887563288</div>
+      <div class="info">📧 alessandra.desimone@sixlives.it</div>
+      <button onclick="sendMail(['ferdirotu@gmail.com','alessandra.desimone@sixlives.it'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">PENTA CALL SRLS</div>
+      <div class="info"><span>📞 Referente:</span> Giusy Caramazza</div>
+      <div class="info">📱 3287635554</div>
+      <div class="info">📧 giusycaramazza@pentaservizi.it</div>
+      <div class="info"><span>📞:</span> Francesco Avona</div>
+      <div class="info">📱 3475517231</div>
+      <div class="info">📧 francescoavona@mediacallsrl.it</div>
+      <div class="note">Stessi referenti anche per fibra Penta Call</div>
+      <button onclick="sendMail(['giusycaramazza@pentaservizi.it','francescoavona@mediacallsrl.it'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">NISA CALL SRLS Galatina</div>
+      <div class="info"><span>📞 Referente Galatina:</span> Ilenia Pandi</div>
+      <div class="info">📱 3200421984</div>
+      <div class="info">📧 backoffice@nisacall.it</div>
+      <div class="info"><span>📞 Ceglie:</span> Massimo D’aversa</div>
+      <div class="info">📱 3343253546</div>
+      <div class="info">📧 tl.galatina@nisacall.it</div>
+      <div class="info">📧 l.minunno@nisacall.it</div>
+      <div class="info">📧 g.gioia@nisacall.it</div>
+      <div class="info">📧 ile.pandi84@gmail.com</div>
+      <div class="info">📧 m.daversa@nisacall.it</div>
+      <div class="info">📧 g.capobianco@nisacall.it</div>
+      <button onclick="sendMail(['backoffice@nisacall.it','tl.galatina@nisacall.it','l.minunno@nisacall.it','g.gioia@nisacall.it','ile.pandi84@gmail.com','m.daversa@nisacall.it','g.capobianco@nisacall.it'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">SISTEMA ERM SRL</div>
+      <div class="info"><span>📞 Referente:</span> Luca Costa</div>
+      <div class="info">📱 3317647890</div>
+      <div class="info">📧 backofficesistemaerm@gmail.com</div>
+      <div class="info"><span>📞:</span> Carmen</div>
+      <div class="info">📱 3288883002</div>
+      <div class="info">📧 leonardotredicini@gmail.com</div>
+      <div class="note">Il partner si ferma a luglio</div>
+      <button onclick="sendMail(['backofficesistemaerm@gmail.com','leonardotredicini@gmail.com'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">ATF MANAGEMENT</div>
+      <div class="info"><span>📞 Referente:</span> Rosa Zaccaria</div>
+      <div class="info">📱 3383727695</div>
+      <div class="info">☎️ 3773318024</div>
+      <div class="info">📧 managementatf@gmail.com</div>
+      <div class="info">📧 bo.gestionepratiche@gmail.com</div>
+      <button onclick="sendMail(['managementatf@gmail.com','bo.gestionepratiche@gmail.com'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">FREE VOICE</div>
+      <div class="info"><span>📞 Referente:</span> Tania Di Maio</div>
+      <div class="info">📱 3510036964</div>
+      <div class="info">📧 t.dimaio@free-voice.it</div>
+      <div class="note">Il partner non utilizza SIDIAL</div>
+      <button onclick="sendMail(['t.dimaio@free-voice.it'])">📩 Invia Mail</button>
+    </div>
+
+    <div class="card">
+      <div class="team-name">AP SERVICE</div>
+      <div class="info"><span>📞 Referente:</span> Alessandro Panetta</div>
+      <div class="info">📱 3896739236</div>
+      <div class="info">📧 alessandroserviziaziende@gmail.com</div>
+      <div class="note">Il partner lavorerà mediante acquisizione contratti su punti fisici</div>
+      <button onclick="sendMail(['alessandroserviziaziende@gmail.com'])">📩 Invia Mail</button>
+    </div>
+<div class="card">
+  <div class="team-name">HIPER CONSULT SRL</div>
+  <div class="info"><span>📞 Referente attività:</span> Salvatore Furnò</div>
+  <div class="info">📧 risorseumane@hyperconsult.io</div>
+  <div class="info">📧 direzione@hyperconsult.io</div>
+  <button onclick="sendMail(['risorseumane@hyperconsult.io','direzione@hyperconsult.io'])">📩 Invia Mail</button>
+</div>
+
+
+  </div>
+</body>
+</html>
+
